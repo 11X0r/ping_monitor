@@ -1,0 +1,9 @@
+[monitor]
+ping_adv_path = "./ping_adv"
+target = "8.8.8.8"
+packet_count = 10
+interval = 1.0
+
+[logging]
+level = "INFO"
+file = "ping_monitor.log"

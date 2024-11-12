@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packages
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+*.tar.gz
+*.zip
+
+# Virtual environments
+poetry.lock
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# VS Code files
+.vscode/
+
+# IDEs
+.idea/
+
+# Logs
+*.log
+*.sqlite3
+.coverage
