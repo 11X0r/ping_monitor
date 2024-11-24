@@ -15,6 +15,11 @@ Network quality monitoring with latency, jitter and packet loss tracking.
 git clone <repo> && cd ping-monitor
 poetry install
 
+# Setup permissions
+sudo setcap cap_net_raw+ep /usr/local/bin/ping_adv
+# Alternative
+sudo chown root:root /usr/local/bin/ping_adv && sudo chmod u+s /usr/local/bin/ping_adv
+
 # Run
 poetry run ping-monitor
 poetry run ping-monitor -v  # verbose mode
@@ -43,3 +48,13 @@ ruff format/check .  # format/lint
 ## Requirements
 - Python 3.12+
 - Poetry 1.7+
+
+
+## Tips
+```bash
+Poetry Installation
+
+curl -sSL https://install.python-poetry.org | python3 -
+export PATH="/home/$USER/.local/bin:$PATH"
+```
+![Ping Monitor](ping-monitor.png)
